@@ -9,7 +9,7 @@
         <img *ngIf="review.rating >= 3 && review.rating < 4" alt="User Image" class="img-circle" src="assets/img/reactions/soso.png">
         <img *ngIf="review.rating >=4" alt="User Image" class="img-circle" src="assets/img/reactions/loved.png">
         <span class="username"> {{review.name}} </span>
-        <span class="description"> {{review.data | date: 'dd:mm:yyyy'}} </span>
+        <span class="description"> {{review.date | date: 'dd:mm:yyyy'}} </span>
       </div>
     </div>
 
